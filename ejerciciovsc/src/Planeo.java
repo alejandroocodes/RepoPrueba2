@@ -2,22 +2,21 @@ import java.util.Scanner;
 
 public class Planeo {
 
-    // datos del curso 
-    static string codigoNurso = "";
-    static string nombreCurso = "";
+    // Datos del curso 
+    static String codigoNurso = "";
+    static String nombreCurso = "";
     static int creditosCurso = 0;
-    static string profesorCurso = "";
-    static string salonCurso = "";
+    static String profesorCurso = "";
+    static String salonCurso = "";
 
-    // número de actividades
+    // Número de actividades
     static int MAX_ACTIVIDADES = 5;
     static int actCount = 0;
-    static Sting[] actNombre = new String[MAX_ACTIVIDADES];
+    static String[] actNombre = new String[MAX_ACTIVIDADES];
     // COMO SE HACE LA FECHA
     static double[] actPorcentaje = new double[MAX_ACTIVIDADES]; //0 - 100
     static double[] actNota = new double[MAX_ACTIVIDADES]; // 0.0 - 5.0
     
-
     public static int menu(){
         System.out.println("*****Menú*****");
         System.out.println("1. Registrar curso");
@@ -28,8 +27,6 @@ public class Planeo {
         System.out.println(". salir");
 
     }
-
-
     public static void main(String[] args){
         for(int i = 0; i < MAX_ACTIVIDADES; i++) actNota[i] = Double;
 
@@ -37,25 +34,9 @@ public class Planeo {
         int option;
 
         System.out.println("Selecciona lo que quieres hacer");
-        int = read.nextInt();
+        option = read.nextInt();
 
 
-
-        do{
-         option = menu(read);
-         switch(option){
-            case 1: sumar(ope1,ope2);
-                    break;
-            case 2: restar(ope1,ope2);
-                    break;
-            case 3: multiplicar(ope1,ope2);
-                    break;
-            case 4: dividir(ope1,ope2);
-                    break;
-            case 5: residuo(ope1,ope2);
-                    break;
-         }
-       }while(option!=6);
  
     }
 }
